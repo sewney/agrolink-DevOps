@@ -1,0 +1,30 @@
+services:
+
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: agrolink-web
+    ports:
+      - "8080:80"
+    environment:
+      DBHOST: db
+      DBNAME: agrolink
+      DBUSER: root
+      DBPASS: ""
+    depends_on:
+      - db
+
+  db:
+    image: mysql:8.0.45
+    container_name: agrolink-db
+    environment:
+      MYSQL_DATABASE: agrolink
+      MYSQL_ROOT_PASSWORD: ""
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+    volumes:
+      - ./app/database/agrolink.sql:/docker-entrypoint-initdb.d/agrolink.sql
+      - mysql_data:/var/lib/mysql
+
+volumes:
+  mysql_data:

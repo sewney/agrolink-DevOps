@@ -5,6 +5,7 @@
 > Portfolio documentation for the manual deployment phase before Dockerization.
 
 ## Table of Contents
+
 1. Overview
 2. Objectives
 3. Technologies
@@ -110,7 +111,7 @@ The objective of this deployment was to host the AgroLink PHP MVC application on
 **Why?**
 
 Elastic IP ensures the server keeps the same public IP after stopping and starting the instance.
- ![EC2 instance](screenshots/EC2%20instance.png)
+![EC2 instance](screenshots/01-manual-deployment/EC2%20instance.png)
 
 ---
 
@@ -143,14 +144,15 @@ systemctl status nginx
 systemctl status php8.3-fpm
 systemctl status mysql
 ```
-![systemctl status outputs](screenshots/status%20outputs.png)
-![nginx status output](screenshots/nginx%20status.png)
+
+![systemctl status outputs](screenshots/01-manual-deployment/status%20outputs.png)
+![nginx status output](screenshots/01-manual-deployment/nginx%20status.png)
 
 ---
 
 ## Step 4 – Clone AgroLink
 
-Repository cloned into  ```/var/www/agrolink```
+Repository cloned into `/var/www/agrolink`
 
 ```bash
 cd /var/www
@@ -166,6 +168,7 @@ agrolink/
 ├── database/
 └── public/
 ```
+
 ---
 
 ## Step 5 – Configure MySQL
@@ -243,9 +246,10 @@ Expected:
 syntax is ok
 test is successful
 ```
+
 This prevents downtime caused by configuration errors.
 
-![test configuration](screenshots/nginx%20testing.png)
+![test configuration](screenshots/01-manual-deployment/nginx%20testing.png)
 
 Reload:
 
@@ -269,7 +273,7 @@ Verified:
 - MVC routing works
 - Database connection works
 
-![deployed website](screenshots/deployed%20agrolink%20homepage.png)
+![deployed website](screenshots/01-manual-deployment/deployed%20agrolink%20homepage.png)
 
 ---
 
@@ -283,7 +287,7 @@ Stopping an EC2 instance without an Elastic IP changes its public IP.
 
 **Solution**
 
-Allocate and associate an Elastic IP. 
+Allocate and associate an Elastic IP.
 
 **Lesson Learned**
 
