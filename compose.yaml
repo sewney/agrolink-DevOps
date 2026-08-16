@@ -11,7 +11,7 @@ services:
       DBHOST: db
       DBNAME: agrolink
       DBUSER: root
-      DBPASS: ""
+      DBPASS: "${MYSQL_ROOT_PASSWORD}"
     depends_on:
       db:
         condition: service_healthy
@@ -21,8 +21,7 @@ services:
     container_name: agrolink-db
     environment:
       MYSQL_DATABASE: agrolink
-      MYSQL_ROOT_PASSWORD: ""
-      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+      MYSQL_ROOT_PASSWORD: "${MYSQL_ROOT_PASSWORD}"
     volumes:
       - ./app/database/agrolink.sql:/docker-entrypoint-initdb.d/agrolink.sql
       - mysql_data:/var/lib/mysql

@@ -4,3 +4,5 @@
 README.md
 debug_log.txt
 .DS_Store
+.env
+documentation/
