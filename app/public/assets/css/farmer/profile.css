@@ -1,0 +1,9 @@
+/* Farmer profile page overrides */
+
+.farmer-profile-modern .profile-role-badge {
+  background: rgba(255, 255, 255, 0.92);
+}
+
+.farmer-profile-modern .profile-account-status {
+  color: #2e7d32;
+}

@@ -1,0 +1,60 @@
+/* Transporter requests page */
+
+.transporter-requests-page .transporter-filter-shell {
+  border: 1px solid #dce3de;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.transporter-requests-page .transporter-filter-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(180px, 1fr));
+}
+
+.transporter-requests-page .transporter-filter-group {
+  padding: 12px 14px;
+  border-right: 1px solid #e6ece8;
+}
+
+.transporter-requests-page .transporter-filter-group:last-child {
+  border-right: none;
+}
+
+.transporter-requests-page .transporter-filter-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #6a7b70;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.transporter-requests-page .transporter-filter-control {
+  border: none;
+  padding: 6px 0 6px 8px;
+  background: transparent;
+}
+
+.transporter-requests-page .transporter-request-list {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  padding-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+  .transporter-requests-page .transporter-filter-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .transporter-requests-page .transporter-filter-group {
+    border-right: none;
+    border-bottom: 1px solid #e6ece8;
+  }
+
+  .transporter-requests-page .transporter-filter-group:last-child {
+    border-bottom: none;
+  }
+}

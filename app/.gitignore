@@ -1,0 +1,12 @@
+# user uploads
+public/assets/images/products/
+public/assets/uploads/
+
+# os / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# logs
+*.log

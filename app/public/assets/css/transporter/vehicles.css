@@ -1,0 +1,41 @@
+/* Transporter vehicles page */
+
+.transporter-vehicles-page {
+  display: block;
+}
+
+.transporter-vehicles-header {
+  margin-bottom: 28px;
+}
+
+.transporter-vehicles-summary {
+  margin-bottom: 24px;
+}
+
+.transporter-vehicles-summary .card-content {
+  padding: 18px 24px;
+  color: #344054;
+}
+
+.transporter-vehicles-summary #activeVehicle {
+  margin-left: 10px;
+}
+
+.transporter-vehicles-toolbar {
+  margin-bottom: 36px;
+}
+
+.transporter-vehicles-table th:nth-child(4),
+.transporter-vehicles-table td:nth-child(4) {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .transporter-vehicles-toolbar {
+    margin-bottom: 24px;
+  }
+
+  .transporter-vehicles-summary .card-content {
+    padding: 16px;
+  }
+}

@@ -1,0 +1,159 @@
+/* Farmer crop requests pages styles */
+
+.crop-request-actions-cell {
+  white-space: nowrap;
+}
+
+.crop-request-view-btn {
+  min-width: 76px;
+  justify-content: center;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.crop-request-status {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 112px;
+  padding: 7px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.crop-request-details-page .crop-request-details-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.crop-request-details-page .crop-request-detail-alert {
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border-left: 4px solid transparent;
+}
+
+.crop-request-details-page .crop-request-detail-alert-success {
+  background: rgba(101, 181, 124, 0.15);
+  color: var(--primary-dark);
+  border-left-color: var(--primary-color);
+}
+
+.crop-request-details-page .crop-request-detail-alert-danger {
+  background: rgba(244, 67, 54, 0.1);
+  color: var(--danger-dark);
+  border-left-color: var(--danger);
+}
+
+.crop-request-details-page .crop-request-status-wrap {
+  margin-bottom: 24px;
+}
+
+.crop-request-details-page .crop-request-detail-status {
+  display: inline-flex;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.crop-request-details-page .crop-request-details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px 24px;
+  margin-bottom: 24px;
+}
+
+.crop-request-details-page .crop-request-detail-label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.crop-request-details-page .crop-request-detail-value {
+  margin: 0;
+  font-size: 18px;
+  color: var(--text-dark);
+  font-weight: 500;
+  word-break: break-word;
+}
+
+.crop-request-details-page .crop-request-detail-value-price {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.crop-request-details-page .crop-request-detail-actions {
+  display: flex;
+  gap: 12px;
+  border-top: 1px solid var(--border-color);
+  padding-top: 24px;
+}
+
+.crop-request-details-page .crop-request-detail-note {
+  border-top: 1px solid var(--border-color);
+  padding-top: 24px;
+  text-align: center;
+}
+
+.crop-request-details-page .crop-request-detail-note p {
+  margin: 0;
+  color: var(--text-light);
+  font-size: 14px;
+}
+
+.crop-request-details-page .crop-request-next-step {
+  margin-top: 20px;
+  padding: 16px;
+  border-radius: 10px;
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+}
+
+.crop-request-details-page .crop-request-next-step h4 {
+  margin: 0 0 8px;
+  color: #166534;
+}
+
+.crop-request-details-page .crop-request-next-step p {
+  margin: 0 0 12px;
+  color: #14532d;
+  font-size: 0.92rem;
+}
+
+@media (max-width: 768px) {
+  .crop-request-details-page .crop-request-details-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .crop-request-details-page .crop-request-details-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .crop-request-details-page .crop-request-detail-actions {
+    flex-direction: column;
+  }
+
+  .crop-request-details-page .crop-request-detail-actions .btn {
+    width: 100%;
+  }
+
+  .crop-requests-page .table {
+    min-width: 760px;
+  }
+
+  .crop-requests-page .crop-request-actions-cell {
+    white-space: nowrap;
+  }
+}

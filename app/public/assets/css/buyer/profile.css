@@ -1,0 +1,32 @@
+/* Buyer profile page styles. */
+
+.buyer-profile-modern .profile-photo-actions .btn {
+  flex: 0 0 auto;
+  max-width: none;
+  min-width: 88px;
+}
+
+.buyer-profile-modern .profile-card-footer .btn {
+  width: auto;
+}
+
+.buyer-profile-modern .buyer-profile-form-grid .buyer-address-details-field textarea {
+  min-height: 68px;
+  resize: vertical;
+}
+
+.buyer-profile-modern .buyer-profile-stats-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (max-width: 980px) {
+  .buyer-profile-modern .buyer-profile-stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .buyer-profile-modern .profile-card-footer .btn {
+    width: auto;
+  }
+}

@@ -1,0 +1,686 @@
+
+    /* ========================================
+       BASE & RESET (from style2.css)
+    ======================================== */
+    :root {
+        --primary-color: #65b57c;
+        --primary-dark: #499d57;
+        --secondary-color: #2a8735;
+        --text-dark: #2c3e50;
+        --text-light: #666;
+        --bg-light: #f8f9fa;
+        --white: #ffffff;
+        --border-color: #e0e0e0;
+        --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        --shadow-hover: 0 4px 12px rgba(0, 0, 0, 0.15);
+        --danger: #f44336;
+        --danger-dark: #d32f2f;
+        --success: #4CAF50;
+        --warning: #ff9800;
+        --info: #2196F3;
+        --font-primary: system-ui, -apple-system, "Segoe UI", sans-serif;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: var(--font-primary);
+        line-height: 1.6;
+        color: var(--text-dark);
+        background-color: var(--bg-light);
+        margin: 0;
+        padding: 0;
+    }
+
+    .top-navbar,
+    .top-navbar *,
+    .dashboard,
+    .dashboard *,
+    .main-content,
+    .main-content * {
+        font-family: var(--font-primary);
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    /* ========================================
+       BUTTONS (from style2.css)
+    ======================================== */
+    .btn {
+        display: inline-block;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 8px;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-align: center;
+        font-family: inherit;
+    }
+
+    .btn-primary {
+        background-color: var(--primary-color);
+        color: var(--white);
+    }
+
+    .btn-primary:hover {
+        background-color: var(--primary-dark);
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-hover);
+    }
+
+    .btn-secondary {
+        background-color: var(--secondary-color);
+        color: var(--white);
+    }
+
+    .btn-secondary:hover {
+        background-color: #F7FBF8;
+        color: var(--primary-dark);
+        border-color: #9FCFA9;
+        transform: none;
+        box-shadow: 0 2px 8px rgba(46, 125, 50, 0.12);
+    }
+
+    /* ========================================
+       DASHBOARD LAYOUT (from style2.css)
+    ======================================== */
+    .dashboard {
+        display: flex;
+        min-height: calc(100vh - 73px);
+    }
+
+    /* Sidebar */
+    .sidebar {
+        width: 260px;
+        background-color: var(--white);
+        border-right: 1px solid var(--border-color);
+        padding: 24px 0;
+        position: sticky;
+        top: 73px;
+        height: calc(100vh - 73px);
+        overflow-y: auto;
+    }
+
+    .sidebar-header {
+        padding: 0 24px 20px;
+        border-bottom: 1px solid var(--border-color);
+        margin-bottom: 20px;
+    }
+
+    .sidebar-title {
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: var(--text-dark);
+        margin-bottom: 4px;
+    }
+
+    .sidebar-menu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .sidebar-menu li {
+        margin-bottom: 4px;
+    }
+
+    .menu-link {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 12px 24px;
+        color: var(--text-dark);
+        transition: all 0.3s ease;
+        cursor: pointer;
+        font-size: 0.95rem;
+    }
+
+    .menu-link:hover {
+        background-color: var(--bg-light);
+        color: var(--primary-color);
+    }
+
+    .menu-icon {
+        width: 20px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+    }
+
+    .menu-icon svg {
+        width: 20px;
+        height: 20px;
+        stroke: currentColor;
+        fill: none;
+    }
+
+    /* Main Content */
+    .main-content {
+        flex: 1;
+        padding: 32px;
+        background-color: var(--bg-light);
+        overflow-y: auto;
+    }
+
+    .content-header {
+        margin-bottom: 32px;
+    }
+
+    .content-title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--text-dark);
+        margin-bottom: 8px;
+    }
+
+    .content-subtitle {
+        font-size: 1rem;
+        color: var(--text-light);
+    }
+
+    /* ========================================
+       CUSTOM PENDING VERIFICATION STYLES
+    ======================================== */
+    .pending-card {
+        background: #fff;
+        border-radius: 12px;
+        border: 1px solid #e8e8e8;
+        overflow: hidden;
+    }
+
+    .pending-card-banner {
+        height: 6px;
+        background: var(--primary-color);
+    }
+
+    .pending-card-body {
+        padding: 2rem;
+    }
+
+    .pending-user-strip {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        padding-bottom: 1.5rem;
+        margin-bottom: 1.5rem;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+    .pending-avatar {
+        width: 52px;
+        height: 52px;
+        background: #e8f8f0;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+    }
+
+    .pending-avatar svg {
+        width: 28px;
+        height: 28px;
+        stroke: var(--primary-color);
+        fill: none;
+        stroke-width: 1.5;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+    }
+
+    .badge-pending-status {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        background: #fff9e6;
+        color: #b7791f;
+        border: 1px solid #f6d860;
+        font-size: 11px;
+        font-weight: 600;
+        padding: 4px 10px;
+        border-radius: 20px;
+        margin-top: 6px;
+    }
+
+    .badge-pulse {
+        width: 7px;
+        height: 7px;
+        background: #f39c12;
+        border-radius: 50%;
+        animation: badgePulse 1.8s ease-in-out infinite;
+    }
+
+    @keyframes badgePulse {
+
+        0%,
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        50% {
+            opacity: 0.3;
+            transform: scale(0.8);
+        }
+    }
+
+    .pending-steps {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+        margin: 1.5rem 0;
+    }
+
+    .pending-step {
+        background: #f8f9fa;
+        border-radius: 8px;
+        padding: 14px;
+        border: 1px solid #eee;
+    }
+
+    .pending-step.active {
+        background: #fffdf0;
+        border-color: #f6d860;
+    }
+
+    .pending-step.locked {
+        opacity: 0.45;
+    }
+
+    .step-num-label {
+        font-size: 12px;
+        color: #aaa;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        margin-bottom: 8px;
+    }
+
+    .step-icon-box {
+        width: 32px;
+        height: 32px;
+        background: #e8f8f0;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 8px;
+    }
+
+    .pending-step.active .step-icon-box {
+        background: #fff3cd;
+    }
+
+    .step-icon-box svg {
+        width: 16px;
+        height: 16px;
+        stroke: var(--primary-color);
+        fill: none;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+    }
+
+    .pending-step.active .step-icon-box svg {
+        stroke: #d4851a;
+    }
+
+    .step-title {
+        font-size: 14px;
+        font-weight: 600;
+        color: #2c3e50;
+        margin-bottom: 4px;
+    }
+
+    .step-desc {
+        font-size: 12px;
+        color: #999;
+        line-height: 1.5;
+    }
+
+    .pending-info-box {
+        background: #f0faf5;
+        border: 1px solid #a8e6c8;
+        border-radius: 8px;
+        padding: 12px 16px;
+        display: flex;
+        gap: 10px;
+        align-items: flex-start;
+        margin: 1.5rem 0;
+    }
+
+    .pending-info-box svg {
+        width: 16px;
+        height: 16px;
+        stroke: var(--primary-color);
+        fill: none;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        flex-shrink: 0;
+        margin-top: 1px;
+    }
+
+    .pending-info-box p {
+        font-size: 13px;
+        color: #1a6e45;
+        line-height: 1.6;
+        margin: 0;
+    }
+
+    .pending-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 1.5rem;
+    }
+
+    .pending-help {
+        font-size: 12px;
+        color: #aaa;
+    }
+
+    .pending-help a {
+        color: var(--primary-color);
+        text-decoration: none;
+    }
+
+    /* ========================================
+       RESPONSIVE STYLES (from style2.css & custom)
+    ======================================== */
+    @media (max-width: 1024px) {
+        .dashboard {
+            flex-direction: column;
+        }
+
+        .sidebar {
+            width: 100%;
+            position: static;
+            height: auto;
+            border-right: none;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .main-content {
+            padding: 24px 16px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .top-navbar {
+            padding: 12px 16px;
+        }
+
+        .content-title {
+            font-size: 1.5rem;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .pending-steps {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .logo-section img {
+            height: 32px;
+        }
+
+        .logo-text {
+            font-size: 1.2rem;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            font-size: 0.9rem;
+        }
+    }
+
+    /* ========================================
+   TOP NAVIGATION BAR STYLES
+   ======================================== */
+
+/* Top Navigation Bar Container */
+.top-navbar {
+    background-color: var(--white);
+    border-bottom: 1px solid var(--border-color);
+    padding: 16px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* Logo Section */
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-section img {
+    height: 40px;
+    width: auto;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+/* User Section */
+.user-section {
+    display: flex !important;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+    visibility: visible;
+    opacity: 1;
+}
+
+/* User Info (clickable area) */
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+/* User Avatar */
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.user-avatar:hover {
+    background-color: var(--primary-dark);
+    transform: scale(1.05);
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.2);
+}
+
+/* User Details */
+.user-details {
+    display: flex !important;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 120px;
+}
+
+.user-name {
+    font-weight: 600;
+    color: var(--text-dark);
+    font-size: 0.95rem;
+    line-height: 1.2;
+    white-space: nowrap;
+}
+
+.user-role {
+    font-size: 0.8rem;
+    color: var(--text-light);
+    text-transform: capitalize;
+    line-height: 1.2;
+    white-space: nowrap;
+}
+
+.user-greeting {
+    font-size: 0.75rem;
+    color: var(--text-light);
+    line-height: 1.2;
+    white-space: nowrap;
+}
+
+/* User Caret Icon */
+.user-caret {
+    color: var(--text-light);
+    transition: transform 0.3s ease;
+}
+
+.user-info:hover .user-caret {
+    transform: rotate(180deg);
+}
+
+/* Logout Button (simple version) */
+.logout-btn {
+    padding: 8px 20px;
+    background-color: var(--danger);
+    color: var(--white);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.logout-btn:hover {
+    background-color: var(--danger-dark);
+}
+
+/* ========================================
+   USER DROPDOWN MENU STYLES
+   ======================================== */
+
+/* Dropdown Container */
+.user-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 0.5rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    min-width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.user-dropdown.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Dropdown Items */
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    color: #333;
+    text-decoration: none;
+    transition: background 0.2s ease;
+}
+
+.dropdown-item:hover {
+    background: #f5f5f5;
+}
+
+.dropdown-item:first-child {
+    border-radius: 8px 8px 0 0;
+}
+
+.dropdown-item:last-child {
+    border-radius: 0 0 8px 8px;
+}
+
+.dropdown-item svg {
+    flex-shrink: 0;
+}
+
+/* Dropdown Divider */
+.dropdown-divider {
+    height: 1px;
+    background: #e0e0e0;
+    margin: 0.5rem 0;
+}
+
+/* Logout Item (red color) */
+.logout-item {
+    color: #dc3545;
+}
+
+.logout-item:hover {
+    background: #fff5f5;
+}
+
+/* ========================================
+   RESPONSIVE STYLES
+   ======================================== */
+
+@media (max-width: 768px) {
+    .top-navbar {
+        padding: 12px 16px;
+    }
+    
+    .user-details {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-section img {
+        height: 32px;
+    }
+    
+    .logo-text {
+        font-size: 1.2rem;
+    }
+    
+    .user-avatar {
+        width: 36px;
+        height: 36px;
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,159 @@
+.securepay-card {
+    border: 1px solid #d0dbe6;
+}
+
+.securepay-head {
+    margin-bottom: 18px;
+}
+
+.securepay-brand {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #1660cf;
+    border-radius: 999px;
+    padding: 6px 14px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #1660cf;
+    letter-spacing: 0.2px;
+}
+
+.securepay-head-copy {
+    margin: 10px 0 0;
+    color: #4b5563;
+}
+
+.securepay-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 300px;
+    gap: 18px;
+}
+
+.securepay-section-title {
+    margin-top: 0;
+    margin-bottom: 14px;
+}
+
+.securepay-inline-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.securepay-summary-wrap {
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 14px;
+    background: #f8fafc;
+    height: fit-content;
+}
+
+.securepay-order-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.securepay-order-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.securepay-order-list li:last-child {
+    border-bottom: 0;
+}
+
+.securepay-total-row {
+    margin-top: 12px;
+    padding-top: 10px;
+    border-top: 1px solid #cbd5e1;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+}
+
+.securepay-error {
+    margin-top: 8px;
+    margin-bottom: 10px;
+    color: #b42318;
+    background: #fee4e2;
+    border: 1px solid #fecdca;
+    padding: 8px 10px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+}
+
+.securepay-submit-btn {
+    margin-top: 8px;
+}
+
+.securepay-processing {
+    margin-top: 12px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: #1f2937;
+}
+
+.securepay-loader {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid #93c5fd;
+    border-top-color: #1660cf;
+    animation: securepaySpin 0.8s linear infinite;
+}
+
+@keyframes securepaySpin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.securepay-result-card {
+    max-width: 720px;
+}
+
+.securepay-result-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 999px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.securepay-result-success .securepay-result-icon {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.securepay-result-failed .securepay-result-icon {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.securepay-result-actions {
+    margin-top: 16px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 900px) {
+    .securepay-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .securepay-inline-grid {
+        grid-template-columns: 1fr;
+    }
+}

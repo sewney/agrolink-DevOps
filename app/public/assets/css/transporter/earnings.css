@@ -1,0 +1,62 @@
+/* Transporter earnings page */
+
+.transporter-earnings-page .transporter-earnings-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.transporter-earnings-page .transporter-earnings-breakdown-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #eaecf0;
+  background: #f8fafb;
+}
+
+.transporter-earnings-page .transporter-earnings-breakdown-row span {
+  color: #475467;
+}
+
+.transporter-earnings-page .transporter-earnings-breakdown-row strong {
+  color: #1d2939;
+}
+
+.transporter-earnings-page .transporter-earnings-breakdown-total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px;
+  border-radius: 10px;
+  background: #e8f5e9;
+  border: 1px solid #d8eadb;
+}
+
+.transporter-earnings-page .transporter-earnings-breakdown-total strong {
+  color: #2e7d32;
+  font-size: 1.05rem;
+}
+
+.transporter-earnings-page .transporter-earnings-breakdown-note {
+  color: #667085;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  padding: 6px 2px;
+}
+
+@media (max-width: 768px) {
+  .transporter-earnings-page .transporter-earnings-breakdown-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .transporter-earnings-page .card-header {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .transporter-earnings-page .card-header .btn {
+    width: 100%;
+  }
+}

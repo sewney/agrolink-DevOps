@@ -1,0 +1,331 @@
+/* Buyer reviews page styles. */
+
+.buyer-reviews-page .buyer-feedback-composer-card {
+  margin-bottom: 20px;
+}
+
+.buyer-reviews-page .buyer-feedback-sections {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.buyer-reviews-page .buyer-feedback-section-title {
+  margin: 0 0 10px;
+  font-size: 1.02rem;
+  color: #1f2937;
+}
+
+.buyer-reviews-page .buyer-feedback-empty {
+  border: 1px dashed #d0d5dd;
+  border-radius: 10px;
+  padding: 14px;
+  color: #667085;
+  background: #fff;
+}
+
+.buyer-reviews-page .buyer-feedback-pending-list {
+  display: grid;
+  gap: 12px;
+}
+
+.buyer-reviews-page .buyer-feedback-pending-item {
+  border: 1px solid #e4e7ec;
+  border-radius: 10px;
+  padding: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  background: #fff;
+}
+
+.buyer-reviews-page .buyer-feedback-pending-title {
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.buyer-reviews-page .buyer-feedback-pending-meta {
+  margin-top: 4px;
+  font-size: 0.88rem;
+  color: #667085;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.buyer-reviews-page .buyer-feedback-pending-action {
+  width: auto;
+  min-width: 0;
+}
+
+.buyer-reviews-page .buyer-reviews-status {
+  border-radius: 8px;
+  border: 1px solid transparent;
+}
+
+.buyer-reviews-page .buyer-reviews-status.pending {
+  background: #fff7e6;
+  color: #b54708;
+  border-color: #f7d7a1;
+}
+
+.buyer-reviews-page .buyer-reviews-status.confirmed,
+.buyer-reviews-page .buyer-reviews-status.accepted,
+.buyer-reviews-page .buyer-reviews-status.delivered,
+.buyer-reviews-page .buyer-reviews-status.completed {
+  background: #dff6e7;
+  color: #166534;
+  border-color: #b7e4c7;
+}
+
+.buyer-reviews-page .buyer-reviews-status.processing,
+.buyer-reviews-page .buyer-reviews-status.in_transit,
+.buyer-reviews-page .buyer-reviews-status.shipped,
+.buyer-reviews-page .buyer-reviews-status.running {
+  background: #f2f4f7;
+  color: #475467;
+  border-color: #d0d5dd;
+}
+
+.buyer-reviews-page .buyer-reviews-status.cancelled,
+.buyer-reviews-page .buyer-reviews-status.canceled,
+.buyer-reviews-page .buyer-reviews-status.rejected,
+.buyer-reviews-page .buyer-reviews-status.failed {
+  background: #fee4e2;
+  color: #b42318;
+  border-color: #fecdca;
+}
+
+.buyer-reviews-page .buyer-reviews-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.buyer-reviews-page .buyer-review-card {
+  padding: 18px;
+  border: 1px solid #e4e7ec;
+  box-shadow: 0 2px 10px rgba(16, 24, 40, 0.06);
+}
+
+.buyer-reviews-page .buyer-review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.buyer-reviews-page .buyer-review-main {
+  display: flex;
+  gap: 14px;
+  min-width: 0;
+}
+
+.buyer-reviews-page .buyer-review-thumb,
+.buyer-reviews-page .buyer-review-placeholder {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.buyer-reviews-page .buyer-review-placeholder {
+  background: #f2f4f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+}
+
+.buyer-reviews-page .buyer-review-meta-title {
+  margin: 0 0 4px;
+  font-size: 1rem;
+  color: #1f2937;
+}
+
+.buyer-reviews-page .buyer-review-meta-sub {
+  margin: 0;
+  color: #667085;
+  font-size: 0.9rem;
+}
+
+.buyer-reviews-page .buyer-review-meta-sub span {
+  font-weight: 600;
+  color: #344054;
+}
+
+.buyer-reviews-page .buyer-review-date {
+  margin: 6px 0 0;
+  font-size: 0.82rem;
+  color: #98a2b3;
+}
+
+.buyer-reviews-page .buyer-review-rating {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+}
+
+.buyer-reviews-page .buyer-review-rating-stars {
+  color: #f59e0b;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.buyer-reviews-page .buyer-review-complaint-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  background: #fee4e2;
+  color: #b42318;
+  border: 1px solid #fecdca;
+}
+
+.buyer-reviews-page .buyer-review-comment {
+  margin-top: 12px;
+  background: #f8fafb;
+  border-left: 3px solid #52a266;
+  border-radius: 8px;
+  padding: 12px 14px;
+}
+
+.buyer-reviews-page .buyer-review-comment.is-complaint {
+  border-left-color: #ef4444;
+  background: #fff7f7;
+}
+
+.buyer-reviews-page .buyer-review-comment-text {
+  margin: 0;
+  color: #344054;
+  line-height: 1.5;
+}
+
+.buyer-reviews-page .buyer-review-reply {
+  margin-top: 14px;
+  padding: 12px 14px;
+  border-left: 3px solid #4caf50;
+  border-radius: 8px;
+  background: #f3fbf5;
+}
+
+.buyer-reviews-page .buyer-review-reply-title {
+  margin: 0 0 4px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #2e7d32;
+}
+
+.buyer-reviews-page .buyer-review-reply-text {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #475467;
+}
+
+.buyer-reviews-page .buyer-reviews-empty-state {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 40px 20px;
+  background: #fff;
+  border-radius: 12px;
+  border: 1px dashed #e0e0e0;
+}
+
+.buyer-reviews-page .buyer-reviews-empty-icon {
+  font-size: 3rem;
+  margin-bottom: 12px;
+}
+
+.buyer-review-modal {
+  z-index: 1001;
+}
+
+.buyer-review-modal .buyer-review-modal-content {
+  background-color: #fff;
+  margin: 7% auto;
+  padding: 24px;
+  border: 1px solid #d0d5dd;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 12px;
+  position: relative;
+}
+
+.buyer-review-modal .buyer-review-modal-close {
+  color: #98a2b3;
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  font-size: 28px;
+  font-weight: 600;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.buyer-review-modal .buyer-review-modal-title {
+  margin-top: 0;
+  color: #1f2937;
+}
+
+.buyer-review-modal .buyer-review-modal-subtitle {
+  color: #667085;
+  margin-bottom: 20px;
+}
+
+.buyer-review-modal .buyer-review-modal-rating {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.buyer-review-modal .buyer-review-modal-label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.buyer-review-modal .buyer-review-modal-stars {
+  justify-content: center;
+  font-size: 2rem;
+  color: #d0d5dd;
+  cursor: pointer;
+  margin-left: 0;
+}
+
+.buyer-review-modal .buyer-review-modal-field {
+  margin-bottom: 20px;
+}
+
+.buyer-review-modal .buyer-review-modal-textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+  resize: vertical;
+  font: inherit;
+}
+
+@media (max-width: 900px) {
+  .buyer-reviews-page .buyer-feedback-sections {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .buyer-reviews-page .buyer-review-header {
+    flex-direction: column;
+  }
+
+  .buyer-reviews-page .buyer-review-rating {
+    align-items: flex-start;
+  }
+
+  .buyer-reviews-page .buyer-feedback-pending-action {
+    width: 100%;
+  }
+}

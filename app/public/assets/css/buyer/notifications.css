@@ -1,0 +1,17 @@
+/* Buyer-only notification page refinements. */
+
+.buyer-notifications-page .notifications-header-actions {
+  flex-wrap: nowrap;
+}
+
+.buyer-notifications-page .notifications-header-actions .btn {
+  white-space: nowrap;
+}
+
+@media (max-width: 980px) {
+  .buyer-notifications-page .notifications-header-actions {
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 2px;
+  }
+}

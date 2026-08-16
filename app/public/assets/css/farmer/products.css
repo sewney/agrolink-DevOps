@@ -1,0 +1,172 @@
+/* Farmer products page styles */
+
+.farmer-products-page .content-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.farmer-products-page .content-header .content-title {
+  margin-bottom: 0;
+}
+
+.farmer-products-page .btn-add-product {
+  margin-left: auto;
+}
+
+.btn-add-product {
+  background: linear-gradient(135deg, #81c784 0%, #66bb6a 100%);
+  color: #ffffff;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 4px 12px rgba(129, 199, 132, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn-add-product:hover {
+  background: linear-gradient(135deg, #66bb6a 0%, #43a047 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(67, 160, 71, 0.4);
+}
+
+.btn-add-product:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(67, 160, 71, 0.3);
+}
+
+.btn-add-product svg {
+  transition: transform 0.3s ease;
+}
+
+.btn-add-product:hover svg {
+  transform: rotate(90deg);
+}
+
+.product-actions-cell {
+  white-space: nowrap;
+}
+
+.farmer-products-page .table-container {
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  overflow: hidden;
+}
+
+#addProductForm,
+#editProductForm {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#addProductForm .form-group,
+#editProductForm .form-group {
+  margin: 0;
+}
+
+.product-form-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+#addProductForm textarea.form-control,
+#editProductForm textarea.form-control {
+  min-height: 84px;
+  resize: vertical;
+}
+
+#addProductForm .modal-footer,
+#editProductForm .modal-footer {
+  margin-top: 4px;
+  padding-top: 12px;
+  border-top: 1px solid #eef1f4;
+}
+
+.product-table-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  border: 1px solid #d9dde5;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.product-action-btn {
+  border: none;
+  padding: 8px 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  border-radius: 0;
+  box-shadow: none;
+  transform: none;
+}
+
+.product-action-edit {
+  background: #ffffff;
+  color: #1f2a37;
+  border-right: 1px solid #d9dde5;
+}
+
+.product-action-edit:hover {
+  background: #f5f7fa;
+  color: #111827;
+}
+
+.product-action-icon {
+  width: 14px;
+  height: 14px;
+}
+
+.product-action-delete {
+  background: linear-gradient(135deg, #66bb6a 0%, #2e7d32 100%);
+  color: #ffffff;
+}
+
+.product-action-delete:hover {
+  filter: brightness(0.95);
+  color: #ffffff;
+}
+
+.product-table-actions .product-action-btn:first-child {
+  border-radius: 9px 0 0 9px;
+}
+
+.product-table-actions .product-action-btn:last-child {
+  border-radius: 0 9px 9px 0;
+}
+
+@media (max-width: 768px) {
+  .farmer-products-page .content-header {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .farmer-products-page .btn-add-product {
+    margin-left: auto;
+  }
+
+  .farmer-products-page .table {
+    min-width: 760px;
+  }
+
+  .product-form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .farmer-products-page td:last-child {
+    white-space: nowrap;
+  }
+}

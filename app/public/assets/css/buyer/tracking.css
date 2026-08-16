@@ -1,0 +1,34 @@
+/* Buyer tracking page styles. */
+
+.buyer-tracking-page .order-status,
+.buyer-tracking-section .order-status {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.buyer-tracking-empty-state {
+  text-align: center;
+  padding: 40px 20px;
+  color: #6b7280;
+}
+
+.buyer-tracking-empty-icon {
+  font-size: 2.25rem;
+  margin-bottom: 12px;
+}
+
+.buyer-tracking-empty-title {
+  margin-bottom: 8px;
+}
+
+.buyer-tracking-empty-text {
+  margin-bottom: 16px;
+}
+
+.buyer-tracking-order-date {
+  font-size: 0.82rem;
+  color: #6b7280;
+}

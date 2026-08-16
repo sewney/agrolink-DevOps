@@ -1,0 +1,16 @@
+/* Farmer notifications page overrides */
+
+.farmer-notifications-page .notifications-header-actions .btn {
+  min-width: 160px;
+}
+
+@media (max-width: 768px) {
+  .farmer-notifications-page .notifications-header-actions {
+    width: 100%;
+  }
+
+  .farmer-notifications-page .notifications-header-actions .btn {
+    width: 100%;
+    min-width: 0;
+  }
+}

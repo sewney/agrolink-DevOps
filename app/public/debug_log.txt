@@ -1,0 +1,352 @@
+2026-04-16 17:23:21 - placeOrder Called
+2026-04-16 17:23:21 - Session ID: misgadbjuh9i4fpb3etlr0t0p3
+2026-04-16 17:23:21 - Session Data: Array
+(
+    [USER] => stdClass Object
+        (
+            [id] => 1
+            [name] => Yomal
+            [email] => yomal@gmail.com
+            [password] => $2y$10$K4JxcAsY85dWYZHLEgTbAOt2nhbibQVPq69ipaSa5qVDcEdObLEga
+            [password_updated_at] => 
+            [role] => buyer
+            [status] => active
+            [deactivated_at] => 
+            [deactivation_reason] => 
+            [created_at] => 2026-04-16 19:08:31
+            [updated_at] => 2026-04-16 19:08:31
+        )
+
+    [buy_now_product_id] => 2
+)
+
+2026-04-16 17:23:21 - Headers: Array
+(
+    [Host] => localhost
+    [Connection] => keep-alive
+    [Content-Length] => 161
+    [sec-ch-ua-platform] => "Windows"
+    [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [sec-ch-ua] => "Google Chrome";v="147", "Not.A/Brand";v="8", "Chromium";v="147"
+    [Content-Type] => multipart/form-data; boundary=----WebKitFormBoundary6ZHEMcJvf1yARj9c
+    [sec-ch-ua-mobile] => ?0
+    [Accept] => */*
+    [Origin] => http://localhost
+    [Sec-Fetch-Site] => same-origin
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Dest] => empty
+    [Referer] => http://localhost/agrolink/public/Checkout?buy_now=1&product_id=2
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Accept-Language] => en-GB,en-US;q=0.9,en;q=0.8
+    [Cookie] => PHPSESSID=misgadbjuh9i4fpb3etlr0t0p3
+)
+
+2026-04-16 17:23:21 - Product 2 (Leeks) - Farmer ID: 2
+2026-04-16 17:23:30 - placeOrder Called
+2026-04-16 17:23:30 - Session ID: misgadbjuh9i4fpb3etlr0t0p3
+2026-04-16 17:23:30 - Session Data: Array
+(
+    [USER] => stdClass Object
+        (
+            [id] => 1
+            [name] => Yomal
+            [email] => yomal@gmail.com
+            [password] => $2y$10$K4JxcAsY85dWYZHLEgTbAOt2nhbibQVPq69ipaSa5qVDcEdObLEga
+            [password_updated_at] => 
+            [role] => buyer
+            [status] => active
+            [deactivated_at] => 
+            [deactivation_reason] => 
+            [created_at] => 2026-04-16 19:08:31
+            [updated_at] => 2026-04-16 19:08:31
+        )
+
+    [buy_now_product_id] => 2
+)
+
+2026-04-16 17:23:30 - Headers: Array
+(
+    [Host] => localhost
+    [Connection] => keep-alive
+    [Content-Length] => 161
+    [sec-ch-ua-platform] => "Windows"
+    [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [sec-ch-ua] => "Google Chrome";v="147", "Not.A/Brand";v="8", "Chromium";v="147"
+    [Content-Type] => multipart/form-data; boundary=----WebKitFormBoundaryrNUsQFQr1BzSEBu1
+    [sec-ch-ua-mobile] => ?0
+    [Accept] => */*
+    [Origin] => http://localhost
+    [Sec-Fetch-Site] => same-origin
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Dest] => empty
+    [Referer] => http://localhost/agrolink/public/Checkout?buy_now=1&product_id=2
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Accept-Language] => en-GB,en-US;q=0.9,en;q=0.8
+    [Cookie] => PHPSESSID=misgadbjuh9i4fpb3etlr0t0p3
+)
+
+2026-04-16 17:23:30 - Product 2 (Leeks) - Farmer ID: 2
+2026-04-16 17:23:37 - placeOrder Called
+2026-04-16 17:23:37 - Session ID: misgadbjuh9i4fpb3etlr0t0p3
+2026-04-16 17:23:37 - Session Data: Array
+(
+    [USER] => stdClass Object
+        (
+            [id] => 1
+            [name] => Yomal
+            [email] => yomal@gmail.com
+            [password] => $2y$10$K4JxcAsY85dWYZHLEgTbAOt2nhbibQVPq69ipaSa5qVDcEdObLEga
+            [password_updated_at] => 
+            [role] => buyer
+            [status] => active
+            [deactivated_at] => 
+            [deactivation_reason] => 
+            [created_at] => 2026-04-16 19:08:31
+            [updated_at] => 2026-04-16 19:08:31
+        )
+
+    [buy_now_product_id] => 2
+)
+
+2026-04-16 17:23:37 - Headers: Array
+(
+    [Host] => localhost
+    [Connection] => keep-alive
+    [Content-Length] => 161
+    [sec-ch-ua-platform] => "Windows"
+    [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [sec-ch-ua] => "Google Chrome";v="147", "Not.A/Brand";v="8", "Chromium";v="147"
+    [Content-Type] => multipart/form-data; boundary=----WebKitFormBoundaryLZUW2dEK3IH98Gy8
+    [sec-ch-ua-mobile] => ?0
+    [Accept] => */*
+    [Origin] => http://localhost
+    [Sec-Fetch-Site] => same-origin
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Dest] => empty
+    [Referer] => http://localhost/agrolink/public/Checkout?buy_now=1&product_id=2
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Accept-Language] => en-GB,en-US;q=0.9,en;q=0.8
+    [Cookie] => PHPSESSID=misgadbjuh9i4fpb3etlr0t0p3
+)
+
+2026-04-16 17:23:37 - Product 2 (Leeks) - Farmer ID: 2
+2026-04-16 20:19:38 - placeOrder Called
+2026-04-16 20:19:38 - Session ID: misgadbjuh9i4fpb3etlr0t0p3
+2026-04-16 20:19:38 - Session Data: Array
+(
+    [USER] => stdClass Object
+        (
+            [id] => 1
+            [name] => Yomal
+            [email] => yomal@gmail.com
+            [password] => $2y$10$K4JxcAsY85dWYZHLEgTbAOt2nhbibQVPq69ipaSa5qVDcEdObLEga
+            [password_updated_at] => 
+            [role] => buyer
+            [status] => active
+            [deactivated_at] => 
+            [deactivation_reason] => 
+            [created_at] => 2026-04-16 19:08:31
+            [updated_at] => 2026-04-16 19:08:31
+        )
+
+    [buy_now_product_id] => 2
+)
+
+2026-04-16 20:19:38 - Headers: Array
+(
+    [Host] => localhost
+    [Connection] => keep-alive
+    [Content-Length] => 161
+    [sec-ch-ua-platform] => "Windows"
+    [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [sec-ch-ua] => "Google Chrome";v="147", "Not.A/Brand";v="8", "Chromium";v="147"
+    [Content-Type] => multipart/form-data; boundary=----WebKitFormBoundary3nrcZWpzZbZ62EU5
+    [sec-ch-ua-mobile] => ?0
+    [Accept] => */*
+    [Origin] => http://localhost
+    [Sec-Fetch-Site] => same-origin
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Dest] => empty
+    [Referer] => http://localhost/agrolink/public/checkout
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Accept-Language] => en-GB,en-US;q=0.9,en;q=0.8
+    [Cookie] => PHPSESSID=misgadbjuh9i4fpb3etlr0t0p3
+)
+
+2026-04-16 20:19:38 - Product 2 (Leeks) - Farmer ID: 2
+2026-04-16 20:59:30 - placeOrder Called
+2026-04-16 20:59:30 - Session ID: p00ik5rnpovtg4gdnt6el7p0ru
+2026-04-16 20:59:30 - Session Data: Array
+(
+    [USER] => stdClass Object
+        (
+            [id] => 29
+            [name] => B1
+            [email] => B1@gmail.com
+            [password] => $2y$10$zq63ZmPi9UuvsND.lQJghedOyXRbZYWYqKe5uwSy5uGG3Tt7OQUdG
+            [password_updated_at] => 
+            [role] => buyer
+            [status] => active
+            [deactivated_at] => 
+            [deactivation_reason] => 
+            [created_at] => 2026-04-17 00:04:02
+            [updated_at] => 2026-04-17 00:04:02
+        )
+
+    [buy_now_product_id] => 2
+)
+
+2026-04-16 20:59:30 - Headers: Array
+(
+    [Host] => localhost
+    [Connection] => keep-alive
+    [Content-Length] => 161
+    [sec-ch-ua-platform] => "Windows"
+    [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [sec-ch-ua] => "Google Chrome";v="147", "Not.A/Brand";v="8", "Chromium";v="147"
+    [Content-Type] => multipart/form-data; boundary=----WebKitFormBoundaryU2AD2AmSuNKzgODR
+    [sec-ch-ua-mobile] => ?0
+    [Accept] => */*
+    [Origin] => http://localhost
+    [Sec-Fetch-Site] => same-origin
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Dest] => empty
+    [Referer] => http://localhost/agrolink/public/Checkout?buy_now=1&product_id=2
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Accept-Language] => en-GB,en-US;q=0.9,en;q=0.8
+    [Cookie] => PHPSESSID=p00ik5rnpovtg4gdnt6el7p0ru
+)
+
+2026-04-16 20:59:30 - Product 2 (Leeks) - Farmer ID: 2
+2026-04-16 20:59:37 - placeOrder Called
+2026-04-16 20:59:37 - Session ID: p00ik5rnpovtg4gdnt6el7p0ru
+2026-04-16 20:59:37 - Session Data: Array
+(
+    [USER] => stdClass Object
+        (
+            [id] => 29
+            [name] => B1
+            [email] => B1@gmail.com
+            [password] => $2y$10$zq63ZmPi9UuvsND.lQJghedOyXRbZYWYqKe5uwSy5uGG3Tt7OQUdG
+            [password_updated_at] => 
+            [role] => buyer
+            [status] => active
+            [deactivated_at] => 
+            [deactivation_reason] => 
+            [created_at] => 2026-04-17 00:04:02
+            [updated_at] => 2026-04-17 00:04:02
+        )
+
+    [buy_now_product_id] => 2
+)
+
+2026-04-16 20:59:37 - Headers: Array
+(
+    [Host] => localhost
+    [Connection] => keep-alive
+    [Content-Length] => 161
+    [sec-ch-ua-platform] => "Windows"
+    [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [sec-ch-ua] => "Google Chrome";v="147", "Not.A/Brand";v="8", "Chromium";v="147"
+    [Content-Type] => multipart/form-data; boundary=----WebKitFormBoundaryZblqaBT1jN4b1Fpv
+    [sec-ch-ua-mobile] => ?0
+    [Accept] => */*
+    [Origin] => http://localhost
+    [Sec-Fetch-Site] => same-origin
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Dest] => empty
+    [Referer] => http://localhost/agrolink/public/Checkout?buy_now=1&product_id=2
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Accept-Language] => en-GB,en-US;q=0.9,en;q=0.8
+    [Cookie] => PHPSESSID=p00ik5rnpovtg4gdnt6el7p0ru
+)
+
+2026-04-16 20:59:37 - Product 2 (Leeks) - Farmer ID: 2
+2026-04-16 21:01:06 - placeOrder Called
+2026-04-16 21:01:06 - Session ID: p00ik5rnpovtg4gdnt6el7p0ru
+2026-04-16 21:01:06 - Session Data: Array
+(
+    [USER] => stdClass Object
+        (
+            [id] => 29
+            [name] => B1
+            [email] => B1@gmail.com
+            [password] => $2y$10$zq63ZmPi9UuvsND.lQJghedOyXRbZYWYqKe5uwSy5uGG3Tt7OQUdG
+            [password_updated_at] => 
+            [role] => buyer
+            [status] => active
+            [deactivated_at] => 
+            [deactivation_reason] => 
+            [created_at] => 2026-04-17 00:04:02
+            [updated_at] => 2026-04-17 00:04:02
+        )
+
+    [buy_now_product_id] => 2
+)
+
+2026-04-16 21:01:06 - Headers: Array
+(
+    [Host] => localhost
+    [Connection] => keep-alive
+    [Content-Length] => 161
+    [sec-ch-ua-platform] => "Windows"
+    [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [sec-ch-ua] => "Google Chrome";v="147", "Not.A/Brand";v="8", "Chromium";v="147"
+    [Content-Type] => multipart/form-data; boundary=----WebKitFormBoundaryTQUzfDadBllX7LaO
+    [sec-ch-ua-mobile] => ?0
+    [Accept] => */*
+    [Origin] => http://localhost
+    [Sec-Fetch-Site] => same-origin
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Dest] => empty
+    [Referer] => http://localhost/agrolink/public/Checkout?buy_now=1&product_id=2
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Accept-Language] => en-GB,en-US;q=0.9,en;q=0.8
+    [Cookie] => PHPSESSID=p00ik5rnpovtg4gdnt6el7p0ru
+)
+
+2026-04-16 21:01:06 - Product 2 (Leeks) - Farmer ID: 2
+2026-04-16 21:01:23 - placeOrder Called
+2026-04-16 21:01:23 - Session ID: p00ik5rnpovtg4gdnt6el7p0ru
+2026-04-16 21:01:23 - Session Data: Array
+(
+    [USER] => stdClass Object
+        (
+            [id] => 29
+            [name] => B1
+            [email] => B1@gmail.com
+            [password] => $2y$10$zq63ZmPi9UuvsND.lQJghedOyXRbZYWYqKe5uwSy5uGG3Tt7OQUdG
+            [password_updated_at] => 
+            [role] => buyer
+            [status] => active
+            [deactivated_at] => 
+            [deactivation_reason] => 
+            [created_at] => 2026-04-17 00:04:02
+            [updated_at] => 2026-04-17 00:04:02
+        )
+
+    [buy_now_product_id] => 2
+)
+
+2026-04-16 21:01:23 - Headers: Array
+(
+    [Host] => localhost
+    [Connection] => keep-alive
+    [Content-Length] => 161
+    [sec-ch-ua-platform] => "Windows"
+    [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [sec-ch-ua] => "Google Chrome";v="147", "Not.A/Brand";v="8", "Chromium";v="147"
+    [Content-Type] => multipart/form-data; boundary=----WebKitFormBoundary6C54tRwQKb60Ffgo
+    [sec-ch-ua-mobile] => ?0
+    [Accept] => */*
+    [Origin] => http://localhost
+    [Sec-Fetch-Site] => same-origin
+    [Sec-Fetch-Mode] => cors
+    [Sec-Fetch-Dest] => empty
+    [Referer] => http://localhost/agrolink/public/Checkout?buy_now=1&product_id=2
+    [Accept-Encoding] => gzip, deflate, br, zstd
+    [Accept-Language] => en-GB,en-US;q=0.9,en;q=0.8
+    [Cookie] => PHPSESSID=p00ik5rnpovtg4gdnt6el7p0ru
+)
+
+2026-04-16 21:01:23 - Product 2 (Leeks) - Farmer ID: 2

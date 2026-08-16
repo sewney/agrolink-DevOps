@@ -1,0 +1,96 @@
+/* Farmer deliveries page styles */
+
+.delivery-filter-card {
+  margin-bottom: 20px;
+}
+
+.delivery-filter-row {
+  padding: 16px 20px;
+  overflow-x: auto;
+}
+
+.delivery-filter-group {
+  display: inline-flex;
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.delivery-filter-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 18px;
+  min-height: 40px;
+  background: #ffffff;
+  color: #344054;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-right: 1px solid #e4e7ec;
+  white-space: nowrap;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.delivery-filter-link:last-child {
+  border-right: none;
+}
+
+.delivery-filter-link:hover {
+  background: #f8fafc;
+}
+
+.delivery-filter-link.active {
+  background: #edf7ef;
+  color: #2e7d32;
+}
+
+.farmer-deliveries-page .farmer-deliveries-stats {
+  margin-bottom: 28px;
+}
+
+.farmer-deliveries-page .farmer-deliveries-empty {
+  text-align: center;
+  padding: 48px 20px;
+  background: #ffffff;
+  border: 1px dashed #e0e0e0;
+  border-radius: 12px;
+}
+
+.farmer-deliveries-page .farmer-deliveries-empty-icon {
+  font-size: 2.8rem;
+  margin-bottom: 16px;
+}
+
+.farmer-deliveries-page .farmer-deliveries-empty h3 {
+  margin-bottom: 8px;
+}
+
+.farmer-deliveries-page .farmer-deliveries-empty p {
+  color: #666666;
+}
+
+.farmer-deliveries-page .farmer-deliveries-table-wrap {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.farmer-deliveries-page .farmer-delivery-route-main {
+  font-size: 0.9rem;
+}
+
+.farmer-deliveries-page .farmer-delivery-route-sub {
+  font-size: 0.8rem;
+  color: #666666;
+}
+
+@media (max-width: 768px) {
+  .farmer-deliveries-page .table {
+    min-width: 760px;
+  }
+
+  .farmer-deliveries-page td:last-child {
+    white-space: nowrap;
+  }
+}

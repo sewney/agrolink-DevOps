@@ -1,0 +1,53 @@
+/* Buyer wishlist page styles. */
+
+.buyer-wishlist-actions {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 20px;
+  width: 100%;
+  margin-top: 2px;
+}
+
+.buyer-wishlist-actions .buyer-wishlist-btn {
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  flex: 1 1 0;
+  min-width: 0;
+  min-height: 46px;
+  padding: 10px 22px;
+  border-radius: 12px;
+  line-height: 1;
+  white-space: nowrap;
+  justify-content: center;
+}
+
+.buyer-wishlist-empty-state {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 60px;
+  color: #999;
+}
+
+.buyer-wishlist-empty-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.buyer-wishlist-fallback-image {
+  opacity: 0.6;
+}
+
+@media (max-width: 520px) {
+  .buyer-wishlist-actions {
+    flex-wrap: wrap;
+  }
+
+  .buyer-wishlist-actions .buyer-wishlist-btn {
+    flex: 1 1 calc(50% - 6px);
+    width: 100%;
+    min-height: 44px;
+    padding: 10px 14px;
+  }
+}

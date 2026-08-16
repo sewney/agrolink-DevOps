@@ -1,0 +1,80 @@
+/* Buyer dashboard page styles. */
+
+.buyer-dashboard-overview .buyer-dashboard-stats {
+  gap: 14px;
+}
+
+.buyer-dashboard-overview .buyer-dashboard-stat-card {
+  padding: 16px 18px;
+  border: 1px solid #e4e7ec;
+  box-shadow: 0 2px 8px rgba(16, 24, 40, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.buyer-dashboard-overview .buyer-dashboard-stat-number {
+  font-size: 1.85rem;
+  line-height: 1.15;
+  margin-bottom: 0;
+}
+
+.buyer-dashboard-overview .buyer-dashboard-stat-card .stat-label {
+  font-size: 0.9rem;
+  color: #667085;
+}
+
+.buyer-dashboard-overview .buyer-dashboard-recent-orders-card .order-status {
+  border-radius: 6px;
+  padding: 5px 10px;
+  letter-spacing: 0.4px;
+}
+
+.buyer-dashboard-overview .buyer-dashboard-quick-actions-grid {
+  display: flex;
+  width: 100%;
+  gap: 12px;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.buyer-dashboard-overview .buyer-dashboard-quick-btn {
+  flex: 1 1 0;
+  width: auto;
+  max-width: none;
+  min-width: 0;
+  padding: 10px 16px;
+  justify-content: center;
+}
+
+.buyer-dashboard-empty-orders-cell {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .buyer-dashboard-overview .buyer-dashboard-stat-card {
+    padding: 14px 14px;
+  }
+
+  .buyer-dashboard-overview .buyer-dashboard-stat-number {
+    font-size: 1.55rem;
+  }
+
+  .buyer-dashboard-overview .buyer-dashboard-quick-actions-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 520px) {
+  .buyer-dashboard-overview .buyer-dashboard-quick-actions-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .buyer-dashboard-overview .buyer-dashboard-quick-btn {
+    width: 100%;
+  }
+}
