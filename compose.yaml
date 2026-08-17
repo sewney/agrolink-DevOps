@@ -1,6 +1,7 @@
 services:
 
   web:
+    image: "${WEB_IMAGE:-agrolink-web:local}"
     build:
       context: .
       dockerfile: docker/Dockerfile
