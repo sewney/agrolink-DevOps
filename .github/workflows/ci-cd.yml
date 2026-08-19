@@ -1,0 +1,45 @@
+
+name: AgroLink CI/CD
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: arn:aws:iam::947200279241:role/AgroLink-GitHub-Actions-ECR-Role
+          aws-region: ap-south-1
+
+      - name: Login to Amazon ECR
+        uses: aws-actions/amazon-ecr-login@v2
+
+      - name: Validate Docker Compose
+	env:
+          MYSQL_ROOT_PASSWORD: ci-validation-only
+        run: docker compose config --quiet
+
+      - name: Build and push Docker image
+        env:
+          ECR_REPOSITORY: 947200279241.dkr.ecr.ap-south-1.amazonaws.com/agrolink-web
+          IMAGE_TAG: ${{ github.sha }}
+        run: |
+          docker buildx build \
+            --platform linux/amd64 \
+            -f docker/Dockerfile \
+            -t $ECR_REPOSITORY:$IMAGE_TAG \
+            --push \
+            .
