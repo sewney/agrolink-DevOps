@@ -28,7 +28,7 @@ jobs:
         uses: aws-actions/amazon-ecr-login@v2
 
       - name: Validate Docker Compose
-	env:
+        env:
           MYSQL_ROOT_PASSWORD: ci-validation-only
         run: docker compose config --quiet
 
