@@ -37,20 +37,6 @@ if [ "$DB_HEALTH" != "healthy" ]; then
   exit 1
 fi
 
-# Verify application response
-echo "Waiting for application to become ready..."
-
-for i in {1..12}; do
-  if curl -fsS http://localhost/ > /dev/null; then
-    echo "Application is responding."
-    break
-  fi
-
-  if [ "$i" -eq 12 ]; then
-    echo "Application check failed."
-    exit 1
-  fi
-
-  echo "Application not ready yet. Retrying..."
-  sleep 5
-done
+# Verify the deployed application and its public routes
+echo "Running deployment smoke tests..."
+python3 scripts/smoke_test.py http://localhost
